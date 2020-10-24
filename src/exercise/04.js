@@ -1,12 +1,11 @@
 // useLayoutEffect: auto-scrolling textarea
-// http://localhost:3000/isolated/exercise/04.js
+// http://localhost:3000/isolated/final/04.js
 
 import React from 'react'
 
 function MessagesDisplay({messages}) {
   const containerRef = React.useRef()
-  // 🐨 replace useEffect with useLayoutEffect
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     containerRef.current.scrollTop = containerRef.current.scrollHeight
   })
 
